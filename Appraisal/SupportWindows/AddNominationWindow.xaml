@@ -1,0 +1,40 @@
+﻿<Window x:Class="Appraisal.SupportWindows.AddNominationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appraisal.SupportWindows"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Добавить номинацию" Height="150" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Название номинации:" Margin="3" FontWeight="Bold"/>
+            <TextBox Name="nameTextBox" Margin="3"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+
+            <StackPanel VerticalAlignment="Center" Grid.Row="1">
+                <TextBlock Text="Минимальная оценка:" Margin="3" FontWeight="Bold"/>
+                <xctk:SingleUpDown Name="minSingleUpDown" Margin="3" Value="0" FormatString="N0" Increment="1" Maximum="100"/>
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Center" Grid.Row="2">
+                <TextBlock Text="Максимальная оценка:" Margin="3" FontWeight="Bold"/>
+                <xctk:SingleUpDown Name="maxSingleUpDown" Margin="3" Value="10" FormatString="N0" Increment="1" Maximum="100"/>
+            </StackPanel>
+        </StackPanel>        
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button Width="50" Content="Отмена" Margin="3" Click="Cancel_Click"/>
+            <Button Width="50" Content="ОК" Margin="3" Click="Ok_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

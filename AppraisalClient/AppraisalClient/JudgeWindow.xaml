@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppraisalClient.JudgeWindow">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="Fill">
+                
+                <Label Text="Выберите себя:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="judgesPicker" HorizontalOptions="Fill" VerticalOptions="Center" Margin="25"/>
+            </StackLayout>
+            <Button VerticalOptions="End" HorizontalOptions="End" Text="Далее" Clicked="Button_Clicked" Margin="12"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

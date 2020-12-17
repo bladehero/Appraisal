@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppraisalClient.VotesPage" BackgroundColor="LightGray">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="Teal" Padding="10,20">
+                <Label Grid.Row="0" FontSize="Large" x:Name="nominationLabel" HorizontalTextAlignment="Center"/>
+            </Grid>
+            <Label Grid.Row="1" FontSize="Medium" x:Name="groupLabel" HorizontalTextAlignment="Center"/>
+            <Grid Grid.Row="2" x:Name="gridNumberPicker"/>
+            <Button Grid.Row="3" Text="ОК" Clicked="Send_Click" VerticalOptions="End"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appraisal", "Appraisal\Appraisal.csproj", "{DC927CB0-1094-4D86-ADD5-7C76B57F2B1D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AppraisalClient", "AppraisalClient\AppraisalClient\AppraisalClient.shproj", "{AC5B3908-AFB9-4608-A2A5-B54264D2421B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppraisalClient.Android", "AppraisalClient\AppraisalClient.Android\AppraisalClient.Android.csproj", "{B3F66B36-26CC-4A4B-8658-06A448640803}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AppraisalClient\AppraisalClient\AppraisalClient.projitems*{ac5b3908-afb9-4608-a2a5-b54264d2421b}*SharedItemsImports = 13
+		AppraisalClient\AppraisalClient\AppraisalClient.projitems*{b3f66b36-26cc-4a4b-8658-06a448640803}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC927CB0-1094-4D86-ADD5-7C76B57F2B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC927CB0-1094-4D86-ADD5-7C76B57F2B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC927CB0-1094-4D86-ADD5-7C76B57F2B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC927CB0-1094-4D86-ADD5-7C76B57F2B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F66B36-26CC-4A4B-8658-06A448640803}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0D96384-8681-4D70-8EDB-EB8E1A537B32}
+	EndGlobalSection
+EndGlobal

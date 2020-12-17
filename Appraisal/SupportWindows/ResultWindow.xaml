@@ -1,0 +1,33 @@
+﻿<Window x:Class="Appraisal.SupportWindows.ResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appraisal.SupportWindows"
+        mc:Ignorable="d"
+        Title="Результаты конкурса" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Таблица мест:" Margin="3"/>
+            <DataGrid Grid.Row="1" Name="placeDataGrid" Margin="3"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Таблица номинаций:" Margin="3"/>
+            <DataGrid Grid.Row="1" Name="nominationsDataGrid" Margin="3"/>
+        </Grid>
+        <Button Grid.Row="2" Content="ОК" Margin="3" Click="Button_Click"/>
+    </Grid>
+</Window>
